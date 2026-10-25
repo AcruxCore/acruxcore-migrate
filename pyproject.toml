@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling>=1.21"]
+build-backend = "hatchling.build"
+
+[project]
+name = "acruxcore-migrate"
+version = "0.1.0"
+description = "Move prompts from Langfuse into AcruxCore, with every version and label."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = ["acruxcore>=0.19,<1", "httpx>=0.27,<1"]
+keywords = ["acruxcore", "langfuse", "migration", "prompt management", "llmops"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License",
+  "Programming Language :: Python :: 3",
+  "Environment :: Console",
+]
+
+[project.urls]
+Homepage = "https://acruxcore.com"
+Documentation = "https://docs.acruxcore.com/docs/guides/migrate-prompts-from-langfuse"
+Source = "https://github.com/AcruxCore/acruxcore-migrate"
+
+[project.scripts]
+acruxcore-migrate = "acruxcore_migrate.cli:main"
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/acruxcore_migrate"]

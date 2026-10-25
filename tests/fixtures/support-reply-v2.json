@@ -1,0 +1,31 @@
+{
+    "id": "c74b07f8-30e9-44d8-80bf-c4a1d860f880",
+    "createdAt": "2026-10-25T20:09:51.169Z",
+    "updatedAt": "2026-10-25T20:09:51.198Z",
+    "projectId": "cmvo9fqxs0006qs07gtpxjlab",
+    "createdBy": "API",
+    "prompt": [
+        {
+            "role": "system",
+            "content": "You answer support questions for Acme. Use the customer name."
+        },
+        {
+            "role": "user",
+            "content": "{{customer_name}} asks: {{question}}"
+        }
+    ],
+    "name": "support-reply",
+    "version": 2,
+    "type": "chat",
+    "isActive": true,
+    "config": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.3
+    },
+    "tags": [],
+    "labels": [
+        "production"
+    ],
+    "commitMessage": "use the name",
+    "resolutionGraph": null
+}

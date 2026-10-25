@@ -1,0 +1,51 @@
+{
+    "id": "3525b34f-49b3-45be-b9dc-370a302ee60e",
+    "createdAt": "2026-10-25T20:09:51.198Z",
+    "updatedAt": "2026-10-25T20:09:51.198Z",
+    "projectId": "cmvo9fqxs0006qs07gtpxjlab",
+    "createdBy": "API",
+    "prompt": [
+        {
+            "role": "system",
+            "content": "You answer support questions for Acme. Be friendly and brief. Never promise a refund."
+        },
+        {
+            "name": "history",
+            "type": "placeholder"
+        },
+        {
+            "role": "user",
+            "content": "{{customer_name}} asks: {{question}}"
+        }
+    ],
+    "name": "support-reply",
+    "version": 3,
+    "type": "chat",
+    "isActive": false,
+    "config": {
+        "model": "gpt-4o-mini",
+        "temperature": 0.3
+    },
+    "tags": [],
+    "labels": [
+        "staging",
+        "latest"
+    ],
+    "commitMessage": "add tone and history",
+    "resolutionGraph": {
+        "root": {
+            "name": "support-reply",
+            "version": 3,
+            "id": "3525b34f-49b3-45be-b9dc-370a302ee60e"
+        },
+        "dependencies": {
+            "3525b34f-49b3-45be-b9dc-370a302ee60e": [
+                {
+                    "id": "9a3d03d0-bb98-4a6e-9b3b-3a4db82a6eef",
+                    "name": "tone",
+                    "version": 1
+                }
+            ]
+        }
+    }
+}

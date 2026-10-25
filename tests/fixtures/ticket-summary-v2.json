@@ -1,0 +1,21 @@
+{
+    "id": "5559b030-80e3-4e13-993d-a0a8fdf20f7d",
+    "createdAt": "2026-10-25T20:09:51.248Z",
+    "updatedAt": "2026-10-25T20:09:51.248Z",
+    "projectId": "cmvo9fqxs0006qs07gtpxjlab",
+    "createdBy": "API",
+    "prompt": "Summarise this ticket in at most {{max-words}} words: {{ticket_text}}",
+    "name": "ticket-summary",
+    "version": 2,
+    "type": "text",
+    "isActive": true,
+    "config": {},
+    "tags": [],
+    "labels": [
+        "production",
+        "canary",
+        "latest"
+    ],
+    "commitMessage": null,
+    "resolutionGraph": null
+}
